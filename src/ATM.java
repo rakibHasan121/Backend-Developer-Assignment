@@ -12,7 +12,7 @@ public class ATM {
     protected int atmTotal;
 
     /**
-     * This constructor shall create the hypothetical ATM when programme starts with each bills it will calculate the total amount of ATM
+     * This constructor will create the hypothetical ATM when the programme starts. With each bills then it will calculate the total amount of money ATM holds
      *
      * @param thousandBills    total number of 1000 bills the ATM shall have
      * @param fivehundredbills total number of 500 bills the ATM shall have
@@ -39,7 +39,7 @@ public class ATM {
     }
 
     /**
-     * Remove bills to the ATM system
+     * Remove bills from ATM system
      *
      * @param thousandBills    total number of 1000 bills given to user after successful transaction
      * @param fivehundredbills total number of 500 bills given to user after successful transaction
@@ -52,7 +52,7 @@ public class ATM {
     }
 
     /**
-     * Removes user given amount from ATM total after successful transaction
+     * Deduct inputted amount from ATM total after successful transaction
      * @param removeAmount User given amount
      */
     public void removeAmount(int removeAmount) {
@@ -98,7 +98,7 @@ public class ATM {
     }
 
     /**
-     * This calculates each unit of return bills from the ATM.
+     * This calculates whether ATM can give any return or not. If it can then displays also amount of each unit bill.
      * @param listOfAmount list of withdrawal amount
      */
     public void withdraw(List<Integer> listOfAmount) {
